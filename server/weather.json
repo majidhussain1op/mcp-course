@@ -1,0 +1,28 @@
+{
+  "tools": [
+    {
+      "name": "weather.get_weather",
+      "endpoint": "http://localhost:8000/tool/weather.get_weather",
+      "method": "POST",
+      "input_schema": {
+        "city": "string"
+      }
+    },
+    {
+      "name": "weather.review_code",
+      "endpoint": "http://localhost:8000/prompt/review_code",
+      "method": "POST",
+      "input_schema": {
+        "code": "string"
+      }
+    },
+    {
+      "name": "weather.echo_resource",
+      "endpoint": "http://localhost:8000/resource/echo",
+      "method": "GET",
+      "path_params": {
+        "message": "string"
+      }
+    }
+  ]
+}
